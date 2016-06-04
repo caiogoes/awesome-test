@@ -24,6 +24,10 @@ adminRotas.get('/gabriel', function(req, res){
 	res.sendFile(path.join(__dirname + '/gabriel.html'));
 });
 
+adminRotas.get('/miguel', function(req, res){
+	res.sendFile(path.join(__dirname + '/miguel.html'));
+});
+
 app.use('/fotos', adminRotas);
 app.use('/', mainPage);
 
